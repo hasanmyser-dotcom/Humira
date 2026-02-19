@@ -349,6 +349,18 @@ tabs = st.tabs([
 with tabs[0]:
     st.header("📖 Overview of Humira (Adalimumab)")
     
+    st.markdown("### ℹ️ Basic Information")
+    st.markdown("""
+    <div class="info-box">
+    <p class="card-detail">🧪 <strong>Generic Name:</strong> Adalimumab</p>
+    <p class="card-detail">🏷️ <strong>Brand Name:</strong> Humira®</p>
+    <p class="card-detail">🏭 <strong>Manufacturer:</strong> AbbVie Inc.</p>
+    <p class="card-detail">💊 <strong>Drug Class:</strong> TNF-alpha Inhibitor (Recombinant Human IgG1 Monoclonal Antibody)</p>
+    <p class="card-detail">📅 <strong>FDA Approval:</strong> December 2002</p>
+    <p class="card-detail">📋 <strong>Pregnancy Category:</strong> Should be used during pregnancy only if clearly needed (IgG1 — crosses placenta)</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
     col1, col2 = st.columns(2)
     
     with col1:
@@ -420,18 +432,6 @@ with tabs[0]:
         </ul>
         </div>
         """, unsafe_allow_html=True)
-    
-    st.markdown("### ℹ️ Basic Information")
-    st.markdown("""
-    <div class="info-box">
-    <p class="card-detail">🧪 <strong>Generic Name:</strong> Adalimumab</p>
-    <p class="card-detail">🏷️ <strong>Brand Name:</strong> Humira®</p>
-    <p class="card-detail">🏭 <strong>Manufacturer:</strong> AbbVie Inc.</p>
-    <p class="card-detail">💊 <strong>Drug Class:</strong> TNF-alpha Inhibitor (Recombinant Human IgG1 Monoclonal Antibody)</p>
-    <p class="card-detail">📅 <strong>FDA Approval:</strong> December 2002</p>
-    <p class="card-detail">📋 <strong>Pregnancy Category:</strong> Should be used during pregnancy only if clearly needed (IgG1 — crosses placenta)</p>
-    </div>
-    """, unsafe_allow_html=True)
 
 # ==================== TAB 2: MECHANISM ====================
 with tabs[1]:
@@ -485,15 +485,6 @@ with tabs[1]:
 # ==================== TAB 3: DOSAGE ====================
 with tabs[2]:
     st.header("💊 Dosage and Administration")
-    
-    st.markdown("""
-    <div class="warning-box">
-    <h3>⚠️ Critical Pre-Treatment Requirements</h3>
-    <p style="font-size: 1.1rem; font-weight: bold;">
-    Test for latent TB infection BEFORE initiating Humira. Treat latent TB before starting therapy. Monitor all patients for active TB during treatment, even if initial test is negative.
-    </p>
-    </div>
-    """, unsafe_allow_html=True)
     
     st.markdown("### 👨‍⚕️ Adult Dosing by Indication")
     
@@ -761,6 +752,15 @@ with tabs[4]:
 # ==================== TAB 6: SIDE EFFECTS ====================
 with tabs[5]:
     st.header("⚠️ Adverse Reactions (Side Effects)")
+    
+    st.markdown("""
+    <div class="warning-box">
+    <h3>⚠️ Critical Pre-Treatment Requirements</h3>
+    <p style="font-size: 1.1rem; font-weight: bold;">
+    Test for latent TB infection BEFORE initiating Humira. Treat latent TB before starting therapy. Monitor all patients for active TB during treatment, even if initial test is negative.
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
     
     st.markdown("### 📊 Common Side Effects")
     
@@ -1099,12 +1099,9 @@ st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #64748b; padding: 2rem 0;">
     <p><strong>Humira (Adalimumab) Professional Drug Information</strong></p>
-    <p>Pre-Pharmacode V2.5 Standard | FDA-Verified | Evidence-Based</p>
-    <p>Version 1.0.0 | Last Updated: 2026-02-19</p>
     <p style="font-size: 0.9rem; margin-top: 1rem;">
         ⚠️ <em>This information is for healthcare professionals only. 
         Always consult the full prescribing information and clinical judgment when making treatment decisions.</em>
     </p>
 </div>
 """, unsafe_allow_html=True)
-
