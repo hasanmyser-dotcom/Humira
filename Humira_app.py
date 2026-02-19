@@ -766,7 +766,7 @@ with tabs[5]:
     
     st.markdown("""
     <div class="card-item">
-        <h4>🦠 Infections (Upper Respiratory, Sinusitis) <span class="card-badge card-badge-red">17–23%</span></h4>
+        <h4>🦠 Infections <span class="card-badge card-badge-red">17–23%</span></h4>
         <p class="card-detail">💡 vs 11–13% placebo. Monitor for signs of infection; withhold if serious infection develops</p>
     </div>
     <div class="card-item">
